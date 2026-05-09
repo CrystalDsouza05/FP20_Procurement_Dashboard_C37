@@ -6,7 +6,6 @@
 ![DAX](https://img.shields.io/badge/DAX-65%20Measures-blue?style=flat)
 ![Theme](https://img.shields.io/badge/Theme-Dark%20%7C%20Gold-1a1a1a?style=flat)
 
----
 
 ## 📌 Overview
 
@@ -14,11 +13,13 @@ Crystal Procurement Dashboard is a 2-page Power BI report built for the FP20 Ana
 
 The dashboard follows a dark theme with gold/yellow gradient accents, giving it a clean and professional look suited for executive-level reporting. All charts are built using ZoomCharts custom visuals, which support drill-down, zoom, and rich interactivity natively within Power BI.
 
----
 
 ## 📊 Pages
 
 ### Page 1 — Procurement Spend Overview
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/a6048a7d-381b-4f21-bf33-f2974e466316" />
+
 
 This page answers the core question every procurement leader asks first: **where is the organization's money going, and how does it compare to what was planned?**
 
@@ -37,9 +38,11 @@ A detailed matrix table in the bottom right of the page showing supplier-level d
 #### Slicers
 Year and Quarter slicers sit at the top right of the page as tile-style buttons, allowing the user to filter the entire page to a specific time period.
 
----
 
 ### Page 2 — Risk & Compliance
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/26936f08-e1c3-4e7a-b7f9-03840adc9a8d" />
+
 
 This page answers the operational question: **where are the risks hiding in our supply chain and procurement process?** It combines delivery performance, maverick spend, lead time analysis, and contract compliance into a single view.
 
@@ -58,7 +61,6 @@ A horizontal stacked bar chart comparing maverick spend against contracted spend
 #### Slicers
 Year and Quarter slicers are synced with Page 1, so any time period selection carries across both pages automatically.
 
----
 
 ## 🗃️ Data Model
 
@@ -76,6 +78,10 @@ Dim_CostCentre  ──(active: Cost Centre)────────────�
 
 All active relationships are Many-to-One from Fact to Dim with single-direction cross-filtering. The two inactive date relationships (Requested Delivery and Actual Delivery) are available for use via `USERELATIONSHIP()` in DAX when delivery date analysis is needed.
 
+DATA MODEL
+<img width="2273" height="1279" alt="image" src="https://github.com/user-attachments/assets/15086439-20c0-44bf-991f-cefcdd0b5288" />
+
+
 ### Tables
 
 | Table | Role | Key Column |
@@ -88,7 +94,6 @@ All active relationships are Many-to-One from Fact to Dim with single-direction 
 | `FP_Measure` | Field parameter table for KPI card selection on Page 1 | — |
 | `FP_Dimension` | Field parameter table for dimension switching on both pages | — |
 
----
 
 ## 📐 DAX Measures
 
@@ -221,7 +226,6 @@ All measures are organized into display folders within a single `Measure` table.
 | Icons | https://www.svgrepo.com/ |
 | Field Parameters | KPI card filtering and dimension switching |
 
----
 
 ## 🎨 Design Choices
 
@@ -231,7 +235,6 @@ All measures are organized into display folders within a single `Measure` table.
 - **Dynamic Titles:** Every chart has a DAX-powered title that updates based on the active KPI card, selected dimension, or selected year — the report always tells you exactly what you're looking at
 - **Synced Slicers:** Year and Quarter slicers are synced across both pages so time period selections persist when navigating between pages
 
----
 
 ## 🏆 Challenge Details
 
@@ -244,13 +247,11 @@ All measures are organized into display folders within a single `Measure` table.
 | Total PO Records | 5,200+ |
 | Total Spend | ~$97.9M |
 
----
 
 ## 👤 Author
 
 Built by **Crystal Andrea Dsouza**
 Connect on [LinkedIn](https://www.linkedin.com/in/crystal-andrea-dsouza-641196286/) · View more projects on [GitHub](https://github.com/CrystalDsouza05?tab=repositories)
 
----
 
 *Built with Power BI Desktop · ZoomCharts Drill Down Visuals · FP20 Analytics Challenge 37*
