@@ -13,7 +13,7 @@ Crystal Procurement Dashboard is a 2-page Power BI report built for the FP20 Ana
 
 The dashboard follows a dark theme with gold/yellow gradient accents, giving it a clean and professional look suited for executive-level reporting. All charts are built using ZoomCharts custom visuals, which support drill-down, zoom, and rich interactivity natively within Power BI.
 
-### [Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNjkzYmY5OTAtNmIyNC00ZGFjLTg5YmEtZjA1MTY5MjA0ZTA4IiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9)
+### [Dashboard Link](https://app.powerbi.com/view?r=eyJrIjoiNjkzYmY5OTAtNmIyNC00ZGFjLTg5YmEtZjA1MTY5MjA0ZTA4IiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9)
 
 ## 📊 Pages
 
